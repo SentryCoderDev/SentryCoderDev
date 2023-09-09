@@ -5,12 +5,20 @@
 ## Github Stats  
 <div align="center"><img src="https://github-readme-stats.vercel.app/api?username=SentryCoderDev&show_icons=true&count_private=true&hide_border=true" align="center" /></div>  
 
+<!-- Typing Animation -->
 <div align="center"> 
   
   [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=I'am+Emir+Hamurcu)](https://git.io/typing-svg)  &nbsp; &nbsp; [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=a+17+years+old+developer)](https://git.io/typing-svg) 
+  
+</div> 
 
+<!-- Additional Information -->
+<div align="center"> 
+  
   [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=+👨‍💻+I+am+especially+interested+in+:)](https://git.io/typing-svg) &nbsp; &nbsp; [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=mechanical+electronics+and+software.)](https://git.io/typing-svg) 
-</div>
+  
+</div> 
+
 
 <br/>
 <br/>
