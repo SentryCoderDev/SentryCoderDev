@@ -8,7 +8,7 @@
 <!-- Typing Animation -->
 <div align="center"> 
   
-  [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=I'am+Emir+Hamurcu)](https://git.io/typing-svg)  &nbsp; &nbsp; [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=a+17+years+old+developer)](https://git.io/typing-svg) 
+  [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=I+am+Emir+Hamurcu)](https://git.io/typing-svg)  &nbsp; &nbsp; [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=a+17+years+old+developer)](https://git.io/typing-svg) 
   
 </div> 
 
