@@ -1,7 +1,7 @@
 name: Update README with Latest Commit
 
 on:
-  push:
+  push:                #@todo solve error
     branches:
       - main
   schedule:
