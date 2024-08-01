@@ -6,7 +6,6 @@ on:
       - main
   schedule:
     - cron: '0 * * * *'
-
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -15,19 +14,34 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Get Latest Commits
-        id: get_commits
+      - name: Get List of Repositories
+        id: get_repos
         run: |
           # Get list of repositories
           repos=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            "https://api.github.com/user/repos?per_page=100" | \
-            jq -r '.[] | .ssh_url')
+            "https://api.github.com/user/repos?per_page=100")
 
-          # Collect latest commits for each repository
+          # Save raw JSON response to file for debugging
+          echo "$repos" > repos.json
+
+          # Extract repository SSH URLs
+          repos_urls=$(echo "$repos" | jq -r '.[] | .ssh_url')
+
+          # Save extracted SSH URLs to file for debugging
+          echo "$repos_urls" > repos_urls.txt
+
+      - name: Check Repositories
+        run: |
+          cat repos.json
+          cat repos_urls.txt
+
+      - name: Get Latest Commits
+        id: get_commits
+        run: |
           commit_list=""
-          for repo in $repos; do
-            repo_name=$(basename -s .git $repo)
-            git clone $repo temp-repo
+          while IFS= read -r repo; do
+            repo_name=$(basename -s .git "$repo")
+            git clone "$repo" temp-repo
             cd temp-repo
             latest_commit=$(git log -1 --pretty=format:'%H')
             commit_message=$(git log -1 --pretty=format:"%h - %s" $latest_commit)
@@ -35,7 +49,7 @@ jobs:
             commit_list="${commit_list}\n* [${commit_message}](${commit_url})"
             cd ..
             rm -rf temp-repo
-          done
+          done < repos_urls.txt
 
           echo "COMMIT_LIST=${commit_list}" >> $GITHUB_ENV
 
