@@ -5,7 +5,8 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 * * * *' 
+    - cron: '0 * * * *'
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -17,19 +18,23 @@ jobs:
       - name: Get Latest Commits
         id: get_commits
         run: |
-          # Fetch all repositories
+          # Get list of repositories
           repos=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/user/repos?per_page=100" | \
-            jq -r '.[].ssh_url')
-          
+            jq -r '.[] | .ssh_url')
+
           # Collect latest commits for each repository
           commit_list=""
           for repo in $repos; do
             repo_name=$(basename -s .git $repo)
-            latest_commit=$(git ls-remote $repo HEAD | awk '{print $1}')
+            git clone $repo temp-repo
+            cd temp-repo
+            latest_commit=$(git log -1 --pretty=format:'%H')
             commit_message=$(git log -1 --pretty=format:"%h - %s" $latest_commit)
             commit_url="https://github.com/${{ github.repository_owner }}/$repo_name/commit/$latest_commit"
             commit_list="${commit_list}\n* [${commit_message}](${commit_url})"
+            cd ..
+            rm -rf temp-repo
           done
 
           echo "COMMIT_LIST=${commit_list}" >> $GITHUB_ENV
