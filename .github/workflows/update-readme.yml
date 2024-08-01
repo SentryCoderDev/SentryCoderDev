@@ -12,22 +12,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Get Latest Commit
         id: get_commit
-        run: echo "::set-output name=commit::$(git log -1 --pretty=format:'%H - %s')"
+        run: |
+          echo "commit=$(git log -1 --pretty=format:'%H - %s')" >> $GITHUB_ENV
 
       - name: Update README
         id: update_readme
         run: |
-          sed -i "s|<!-- COMMIT-LIST:START -->|<!-- COMMIT-LIST:START -->\n${{ steps.get_commit.outputs.commit }}|" README.md
+          sed -i "s|<!-- COMMIT-LIST:START -->|<!-- COMMIT-LIST:START -->\n${{ env.commit }}|" README.md
 
       - name: Commit and Push
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: EndBug/add-and-commit@v9
         with:
-          commit_message: Update README with latest commit
-          branch: main
-          file_pattern: README.md
+          add: 'README.md'
+          message: 'Update README with latest commit'
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
