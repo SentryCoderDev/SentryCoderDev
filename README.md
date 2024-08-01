@@ -27,8 +27,11 @@
 <div align="center">
   <p style="font-size: 24px;">📖 I’m currently learning artificial intelligence and robots</p>
   <p style="font-size: 24px;">❓ Ask me about anything interesting projects and crazy plugins</p>
-  <p style="font-size: 24px;">🔭 I’m currently working on SentryBOT <a href="https://github.com/SentryCoderDev/SentryBOT">https://github.com/SentryCoderDev/SentryBOT</a></p>
+  <p style="font-size: 24px;">🔭 I’m currently working on SentryBOT <a href="https://github.com/SentryCoderDev/SentryBOT">SentryCoderDev/SentryBOTV4 </a></p>
+  <p style="font-size: 24px;">🖨 Written interview with more information about me <a href="https://www.makerforge.tech/posts/interview-emir-hamurcu/"> Interview with Emir Hamurcu </a></p>
   <p style="font-size: 24px;">⚡ What I like doing most is reverse engineering after software, mechanics, and electronics.</p>
+  <p style="font-size: 24px;">🛠 I'm working on this project with my sponsor, OpenBCI. <a href="https://openbci.com/community/openbci-discovery-program-sentrybot-bci-cbi/">OpenBCI discovery program SentryBOT BCI-CBI </a></p>
+
   
 </div>
 <br/>  
@@ -95,7 +98,7 @@
 <a href="https://github.com/SentryCoderDev" target="_blank">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
-<a href="https://instagram.com/sentrycoder.dev" target="_blank">
+<a href="https://instagram.com/sentrycoder.developer" target="_blank">
 <img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
 </a>
 <a href="https://www.youtube.com/channel/UCXzt_TAVC_ls0hFLpV_ldMw" target="_blank">
