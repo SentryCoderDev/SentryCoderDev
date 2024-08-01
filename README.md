@@ -115,10 +115,11 @@
 <br/>  
 
 
-## Recent Blog Posts  
-<!-- BLOG-POST-LIST:START -->  
-If things goes well, this section should automatically be replaced by a list of your blog posts after you commit your readme file. 
-<!-- BLOG-POST-LIST:END -->  
+## Latest Commit  
+<!-- COMMIT-LIST:START -->  
+If things go well, this section should automatically be replaced by a list of your latest commits after you commit your readme file. 
+<!-- COMMIT-LIST:END -->  
+<br/>  
 
 <br/>  
 
