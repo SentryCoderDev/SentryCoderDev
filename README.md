@@ -3,7 +3,9 @@
 </div>  
 
 ## Github Stats  
-<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=SentryCoderDev&show_icons=true&count_private=true&hide_border=true" align="center" /></div>  
+<p align="center">
+ <a href="http://www.github.com/SentryCoderDev"><img src="https://github-readme-stats.vercel.app/api?username=SentryCoderDev&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="SentryCoderDev's GitHub stats" />
+  </p>
 
 <!-- Typing Animation -->
 <div align="center"> 
@@ -31,6 +33,25 @@
   <p style="font-size: 24px;">🖨 Written interview with more information about me <a href="https://www.makerforge.tech/posts/interview-emir-hamurcu/"> Interview with Emir Hamurcu </a></p>
   <p style="font-size: 24px;">⚡ What I like doing most is reverse engineering after software, mechanics, and electronics.</p>
   <p style="font-size: 24px;">🛠 I'm working on this project with my sponsor, OpenBCI. <a href="https://openbci.com/community/openbci-discovery-program-sentrybot-bci-cbi/">OpenBCI discovery program SentryBOT BCI-CBI </a></p>
+
+  ### <p align="center">My GitHub Stats</p>
+
+<p align="center">
+ <a href="http://www.github.com/SentryCoderDev"><img src="https://github-profile-trophy.vercel.app/?username=SentryCoderDev&theme=onedark&column=3"  alt="SentryCoderDev's GitHub stats" />
+</p>
+
+<p align="center">
+ <a href="http://www.github.com/SentryCoderDev"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SentryCoderDev&theme=dark&layout=compact&langs_count=8"  alt="SentryCoderDev's GitHub stats" />
+</p>
+
+
+  
+<p align="center">
+<a href="http://www.github.com/SentryCoderDev"><img src="https://github-readme-streak-stats.herokuapp.com/?user=SentryCoderDev&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
+</p>
+
+
+  
 
   
 </div>
